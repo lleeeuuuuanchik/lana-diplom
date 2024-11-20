@@ -1,0 +1,44 @@
+@import url('./base/_global.scss');
+@import url('./base/_fonts.scss');
+
+*, *::after, *::before
+{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+	font-family: 'Montserrat';
+	color: $black;
+}
+
+body
+{
+}
+
+a { text-decoration: none; }
+
+.container
+{
+	max-width: 1448px;
+	margin: 0 auto;
+	padding: 0 10px;
+
+	@include mq($tablet) { padding: 0 24px; }
+}
+
+// transition -----------
+.v-enter-active,
+.v-leave-active { transition: opacity 0.2s ease; }
+
+.v-enter-from,
+.v-leave-to { opacity: 0; }
+
+// swiper
+// это для решения бага с огромной шириной свайпера ---
+.swiper {
+	width: 100%;
+	max-width: 100%;
+	max-height: 100vh;
+	min-height: 0;
+	min-width: 0;
+}
