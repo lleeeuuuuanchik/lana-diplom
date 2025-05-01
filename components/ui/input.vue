@@ -85,7 +85,7 @@
 	{
 		&.active
 		{
-			.ui-input__input { border-color: $black; }
+			.ui-input__input { border-color: $primary; }
 		}
 
 		&.error
@@ -115,8 +115,8 @@
 	{
 		// default
 		width: 100%;
-		padding: 10px 32px 10px 15px;
-		border: 2px solid $gray;
+		padding: 12px 32px 12px 16px;
+		border: 1px solid $gray;
 		outline: none;
 		border-radius: 4px;
 		background-color: $white;
@@ -125,7 +125,7 @@
 		@include transition();
 
 		// effects
-		&:hover { border-color: $black; }
+		&:hover { border-color: $primary; }
 		&::placeholder { color: $gray; }
 		&:disabled
 		{

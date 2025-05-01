@@ -9,6 +9,7 @@
 <template>
 	<div class="index-page container">
 		<hero-section />
+		<find-tour />
 	</div>
 </template>
 

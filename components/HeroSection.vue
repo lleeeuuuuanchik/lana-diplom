@@ -1,10 +1,9 @@
 <script setup>
     import { Swiper, SwiperSlide } from 'swiper/vue';
     import 'swiper/css';
-    import 'swiper/css/pagination';
-    import { Pagination } from 'swiper/modules';
+    import { Autoplay } from 'swiper/modules';
 
-    const modules = [Pagination];
+    const modules = [Autoplay];
 
     const items = ref([
         'https://static.life.ru/posts/2017/08/1037065/211ef2b95b9b6fd6c8d01fc0dc1ef6ec.jpg',
@@ -19,6 +18,10 @@
             :spaceBetween="30"
             :pagination="{
                 clickable: true,
+            }"
+            :autoplay="{
+                delay: 2500,
+                disableOnInteraction: false,
             }"
             :modules="modules"
             class="mySwiper"
@@ -35,13 +38,15 @@
 <style lang='scss'>
     .hero-section
     {
-        margin-bottom: 50px;
+        overflow: hidden;
+        border-radius: 4px;
         width: 100%;
 
         img
         {
             width: 100%;
-            height: 600px;
+            height: 500px;
+            border-radius: 4px;
             object-fit: cover;
         }
     }
