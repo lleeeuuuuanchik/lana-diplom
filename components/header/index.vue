@@ -2,27 +2,13 @@
 	<div class="container">
 		<header class="header">
 			<div class="header__logo">
-				<icons-logo />
+				LAZAROVA-TOURS
 			</div>
 			<nav class="header__navigation">
-				<NuxtLink class="header__navigation-link" to="/">
-					Главная
-				</NuxtLink>
-				<NuxtLink class="header__navigation-link" to="/form">
-					Форма
-				</NuxtLink>
-				<NuxtLink class="header__navigation-link" to="/components">
-					Все компоненты
-				</NuxtLink>
-				<NuxtLink class="header__navigation-link" to="/api">
-					Апишки
-				</NuxtLink>
-				<NuxtLink class="header__navigation-link" to="/pinia">
-					Стор
-				</NuxtLink>
-				<NuxtLink class="header__navigation-link" to="/shadcn">
-					shadcn компоненты
-				</NuxtLink>
+				<a href="" class="header__navigation-link">Найти тур</a>
+				<a href="" class="header__navigation-link">Наши туры</a>
+				<a href="" class="header__navigation-link">О нас</a>
+				<a href="" class="header__navigation-link">Блог</a>
 			</nav>
 		</header>
 	</div>
@@ -32,15 +18,26 @@
 	.header
 	{
 		margin-bottom: 50px;
-		padding: 20px 0;
-		border-bottom: 2px solid $black;
+		padding: 30px 0;
+		border-bottom: 3px solid $primary;
 
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
+		flex-direction: column;
+		gap: 20px;
+		
+		@include mq($tablet)
+		{
+			flex-direction: row;
+			justify-content: space-between;
+		}
 	}
 
-	.header__logo { line-height: 0; }
+	.header__logo
+	{
+		font-size: 1.5rem;
+		font-weight: 600;
+	}
 
 	.header__navigation
 	{
@@ -51,10 +48,11 @@
 
 	.header__navigation-link
 	{
-		font-size: 1.125rem; // 18px
-		color: $gray;
+		font-size: 1rem; // 18px
+		color: $black;
 
 		@include transition();
-		&.router-link-active { color: $black; }
+
+		&:hover { color: $primary }
 	}
 </style>
