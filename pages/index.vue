@@ -11,6 +11,10 @@
 		<hero-section />
 		<find-tour />
 		<the-tours />
+		<about-us />
+		<the-reviews />
+		<the-blog />
+		<the-contacts />
 	</div>
 </template>
 

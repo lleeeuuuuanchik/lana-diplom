@@ -7,8 +7,9 @@
 			<nav class="header__navigation">
 				<a href="#tour" class="header__navigation-link">Найти тур</a>
 				<a href="#the-tours" class="header__navigation-link">Наши туры</a>
-				<a href="" class="header__navigation-link">О нас</a>
-				<a href="" class="header__navigation-link">Блог</a>
+				<a href="#about-us" class="header__navigation-link">О нас</a>
+				<a href="#reviews" class="header__navigation-link">Отзывы</a>
+				<a href="#blog" class="header__navigation-link">Блог</a>
 			</nav>
 		</header>
 	</div>
@@ -43,7 +44,9 @@
 	{
 		display: flex;
 		align-items: center;
+		justify-content: center;
 		gap: 25px;
+		flex-wrap: wrap;
 	}
 
 	.header__navigation-link

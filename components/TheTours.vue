@@ -29,8 +29,8 @@ const tours = ref([
 </script>
 
 <template>
-    <h2 style="margin-bottom: 30px; font-size: 3rem;">Наши туры</h2>
-    <section class="the-tours" id="the-tours">
+    <h2 style="margin-bottom: 30px; font-size: 3rem;" id="the-tours">Наши туры</h2>
+    <section class="the-tours">
         <div v-for="(tour, index) in tours" :key="index" class="tour-card">
             <div class="tour-card__image-wrapper">
                 <img :src="tour.img" :alt="tour.title" class="tour-card__image">
@@ -47,7 +47,7 @@ const tours = ref([
 
 <style lang='scss'>
 .the-tours {
-    margin-bottom: 40px;
+    margin-bottom: 100px;
     display: grid;
     gap: 20px;
 }
@@ -71,11 +71,6 @@ const tours = ref([
         border-radius: 2px;
         background-color: $primary;
     }
-}
-
-.tour-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .tour-card__image-wrapper {
