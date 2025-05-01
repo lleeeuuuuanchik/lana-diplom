@@ -6,7 +6,7 @@
 			</div>
 			<nav class="header__navigation">
 				<a href="#tour" class="header__navigation-link">Найти тур</a>
-				<a href="" class="header__navigation-link">Наши туры</a>
+				<a href="#the-tours" class="header__navigation-link">Наши туры</a>
 				<a href="" class="header__navigation-link">О нас</a>
 				<a href="" class="header__navigation-link">Блог</a>
 			</nav>

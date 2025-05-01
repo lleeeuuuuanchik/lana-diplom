@@ -10,6 +10,7 @@
 	<div class="index-page container">
 		<hero-section />
 		<find-tour />
+		<the-tours />
 	</div>
 </template>
 
