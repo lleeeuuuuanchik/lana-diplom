@@ -50,6 +50,12 @@
                 <a href="#" class="social-icon telegram">
                     <icons-telegram />
                 </a>
+                <a href="#" class="social-icon vk">
+                    <icons-vk />
+                </a>
+                <a href="#" class="social-icon tiktok">
+                    <icons-whats />
+                </a>
               </div>
             </div>
           </div>
@@ -265,7 +271,7 @@
   }
   
   .instagram { background: #E1306C; }
-  .tiktok { background: #000000; }
+  .tiktok { background: green; }
   .vk { background: #4C75A3; }
   .telegram { background: #0088cc; }
   
